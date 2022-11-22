@@ -1,8 +1,8 @@
 name: hello-world
 on: push
 jobs:
-  build:
+  my-job:
     runs-on: ubuntu-latest
     steps:
-      -uses: actions/chekout@v2
-      -run: ls -la  
+      - name: my-step
+        run: echo "Hello World!"
